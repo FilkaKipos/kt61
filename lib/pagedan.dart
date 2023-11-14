@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'pagenik.dart';
 class DanPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

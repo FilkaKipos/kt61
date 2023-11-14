@@ -1,31 +1,17 @@
 import 'package:flutter/material.dart';
+import "main.dart";
 import 'pagedan.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: StartPage(),
-    );
-  }
-}
-
-class StartPage extends StatelessWidget {
+class NikPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Danil Page'),
-        backgroundColor: const Color.fromARGB(255, 87, 3, 3),
-        centerTitle: true,
+        title: Text('Третья страница'),
       ),
       body: Center(
         child: ElevatedButton(
-          child: Text('Далее'),
+          child: Text('Назад'),
           onPressed: () {
             Navigator.push(
               context,
