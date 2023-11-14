@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'pagenik.dart';
 import 'pagedan.dart';
 
 void main() {
