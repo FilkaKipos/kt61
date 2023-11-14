@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: StartPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -18,8 +19,11 @@ class StartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 245, 183, 183),
       appBar: AppBar(
-        title: Text('Стартовая страница'),
+        title: Text('Start Page from Rinat Yakhin'),
+        backgroundColor: Color.fromARGB(255, 58, 44, 44),
+        centerTitle: true,
       ),
       body: Center(
         child: ElevatedButton(
