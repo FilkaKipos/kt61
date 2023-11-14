@@ -19,7 +19,7 @@ class DanPage extends StatelessWidget {
               child: Text('Далее'),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => DanPage()));
+                    MaterialPageRoute(builder: (context) => NikPage()));
               },
             ),
             ElevatedButton(
