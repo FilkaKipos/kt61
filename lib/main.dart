@@ -28,7 +28,7 @@ class StartPage extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => DanPage()),
+              MaterialPageRoute(builder: (context) => SecondPage()),
             );
           },
         ),
