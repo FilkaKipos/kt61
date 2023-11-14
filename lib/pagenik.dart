@@ -7,17 +7,32 @@ class NikPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Третья страница'),
+        title: Text('Nik_page'),
+        backgroundColor: Color.fromARGB(255, 77, 3, 87),
+        centerTitle: true,
       ),
       body: Center(
-        child: ElevatedButton(
-          child: Text('Назад'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => DanPage()),
-            );
-          },
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              child: Text('Стартовая страница'),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => StartPage()));
+              },
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              child: Text('Назад'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DanPage()),
+                );
+              },
+            ),
+          ],
         ),
       ),
     );
