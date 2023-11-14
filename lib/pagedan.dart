@@ -6,6 +6,7 @@ class DanPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 245, 183, 183),
       appBar: AppBar(
         title: Text('Danil Page'),
         backgroundColor: const Color.fromARGB(255, 87, 3, 3),
@@ -28,7 +29,22 @@ class DanPage extends StatelessWidget {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => StartPage()));
               },
-            )
+            ),
+            Container(
+              width: 500,
+              height: 100,
+              color: const Color.fromARGB(255, 255, 255, 255),
+            ),
+            Container(
+              width: 500,
+              height: 100,
+              color: Colors.blue,
+            ),
+            Container(
+              width: 500,
+              height: 100,
+              color: Colors.red,
+            ),
           ],
         ),
       ),
