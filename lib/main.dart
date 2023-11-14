@@ -20,7 +20,9 @@ class StartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Стартовая страница'),
+        title: Text('Danil Page'),
+        backgroundColor: const Color.fromARGB(255, 87, 3, 3),
+        centerTitle: true,
       ),
       body: Center(
         child: ElevatedButton(

@@ -5,19 +5,24 @@ class DanPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Стартовая страница'),
+        title: Text('Страница Данила'),
       ),
       body: Center(
-        child: ElevatedButton(
-          child: Text('Назад'),
-          onPressed: () {
+        child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('Назад'),
+              onPressed: () {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => NikPage()),
             );
           },
+        ],
         ),
+      
       ),
+      
     );
   }
 }
