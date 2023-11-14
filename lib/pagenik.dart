@@ -16,6 +16,8 @@ class NikPage extends StatelessWidget {
             ElevatedButton(
               child: Text('Стартовая страница'),
               onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => StartPage()));
               },
             ),
             SizedBox(height: 20),
