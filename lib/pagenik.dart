@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import "main.dart";
+import 'main.dart';
 import 'pagedan.dart';
 
 class NikPage extends StatelessWidget {
@@ -10,14 +10,25 @@ class NikPage extends StatelessWidget {
         title: Text('Третья страница'),
       ),
       body: Center(
-        child: ElevatedButton(
-          child: Text('Назад'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => DanPage()),
-            );
-          },
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              child: Text('Стартовая страница'),
+              onPressed: () {
+              },
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              child: Text('Назад'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DanPage()),
+                );
+              },
+            ),
+          ],
         ),
       ),
     );
