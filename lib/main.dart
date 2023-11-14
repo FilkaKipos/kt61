@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pagenik.dart';
 import 'pagedan.dart';
 
 void main() {
@@ -19,9 +20,7 @@ class StartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Danil Page'),
-        backgroundColor: const Color.fromARGB(255, 87, 3, 3),
-        centerTitle: true,
+        title: Text('Стартовая страница'),
       ),
       body: Center(
         child: ElevatedButton(
